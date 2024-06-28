@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizaza</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png">
+
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="menuContainer">
+            <h2>Pizza constructor</h2>
+            <p>Оберіть інградієнти</p>
+
+            <div class="categoryTitle" id="cheese">Сир</div>
+            <div class="cheeseGroup">
+                <div class="column">
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/feta.png" alt="feta">
+                            <div>Фета</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="fetaMany" class="allMany">x0</p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusFeta">-</div>
+                                <div class="plus" id="plusFeta">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/motza.png" alt="mozzarella">
+                            <div>Моцарелла</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="motzaMany" class="allMany">x0</p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusMotza">-</div>
+                                <div class="plus" id="plusMotza">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                <div class="group" id="cheddarGroup">
+                    <div class="leftLine">
+                        <img src="./img/cheder.png" alt="cheddar">
+                        <div>Чедер</div>
+                    </div>
+                <div class="rightLine">
+                    <p id="cheddarMany" class="allMany">x0</p>
+                    <div style="display: flex;">
+                        <div class="minus" id="minusCheddar">-</div>
+                        <div class="plus" id="plusCheddar">+</div>
+                    </div>
+                </div>
+                </div>
+                </div>  
+            </div>
+
+
+            <div class="categoryTitle" id="meat">М'ясо</div>
+            <div class="sausageGroup">
+                <div class="column">
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/paparoni.png" alt="feta">
+                            <div>Пепероні</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="paparoniMany" class="allMany">x0</p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusPaparoni">-</div>
+                                <div class="plus" id="plusPaparoni">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/bekon.png" alt="feta">
+                            <div>Бекон</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="bekonMany" class="allMany">x0</p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusBekon">-</div>
+                                <div class="plus" id="plusBekon">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/shunka.png" alt="mozzarella">
+                            <div>Шинка</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="shunkaMany" class="allMany">x0</p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusShunka">-</div>
+                                <div class="plus" id="plusShunka">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                <div class="group" id="cheddarGroup">
+                    <div class="leftLine">
+                        <img src="./img/chicken.png" alt="cheddar">
+                        <div>Курка</div>
+                    </div>
+                <div class="rightLine">
+                    <p id="chickenMany" class="allMany">x0</p>
+                    <div style="display: flex;">
+                        <div class="minus" id="minusChicken">-</div>
+                        <div class="plus" id="plusChicken">+</div>
+                    </div>
+                </div>
+                </div>
+                </div>  
+            </div>
+            <div class="categoryTitle" id="vegetable">Овочі</div>
+            <div class="vegetablesGroup">
+                <div class="column">
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/olives.webp" alt="feta">
+                            <div>Оливки</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="olivesMany" class="allMany"></p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusOlives">-</div>
+                                <div class="plus" id="plusOlives">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/mushrooms.jpg" alt="mozzarella">
+                            <div>Шампіньйони</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="mushroomsMany" class="allMany"></p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusMushrooms">-</div>
+                                <div class="plus" id="plusMushrooms">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/kukurudza.png" alt="mozzarella">
+                            <div>Кукурудза</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="kukurudzaMany" class="allMany"></p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusKukurudza">-</div>
+                                <div class="plus" id="plusKukurudza">+</div>
+                            </div>
+                        </div>
+                    </div>  
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/perec-zelenii.jpeg" alt="mozzarella">
+                            <div>Перець</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="perecMany" class="allMany"></p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusPerec">-</div>
+                                <div class="plus" id="plusPerec">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/ananas.png" alt="mozzarella">
+                            <div>Ананас</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="ananasMany" class="allMany"></p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusAnanas">-</div>
+                                <div class="plus" id="plusAnanas">+</div>
+                            </div>
+                        </div>
+                    </div>  
+
+
+                    <div class="group" id="fetaGroup">
+                        <div class="leftLine">
+                            <img src="./img/tomato.png" alt="mozzarella">
+                            <div>Помідори</div>
+                        </div>
+                        <div class="rightLine">
+                            <p id="tomatoMany" class="allMany"></p>
+                            <div style="display: flex;">
+                                <div class="minus" id="minusTomato">-</div>
+                                <div class="plus" id="plusTomato">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="group" id="cheddarGroup">
+                    <div class="leftLine">
+                        <img src="./img/shpunat.png" alt="cheddar">
+                        <div>Шпинат</div>
+                    </div>
+                <div class="rightLine">
+                    <p id="shpunatMany" class="allMany"></p>
+                    <div style="display: flex;">
+                        <div class="minus" id="minusShpunat">-</div>
+                        <div class="plus" id="plusShpunat">+</div>
+                    </div>
+                </div>
+                </div>
+                </div>  
+            </div>
+            <div id="pay"></div>
+        </div>
+
+
+        <div class="pizzaWrapper">
+            <div class="pizzaItem" id="cheeseOnPizza"><img src="./img/cheese.png" alt="cheese" id="thisPizza"></div>
+            <!-- <div class="pizzaItem" id="fetaHide">
+                <img src="./img/feta.png" alt="feta">
+            </div>
+             <div class="pizzaItem" id="mozzarellaHide">
+                <img src="./img/motza.png" alt="moza">
+            </div> -->
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
