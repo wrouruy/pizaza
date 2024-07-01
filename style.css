@@ -112,6 +112,7 @@ span.bold{
     flex-wrap: wrap;
     position: relative;
     transition: 7s;
+    /* margin-right: 22.5%; */
     transform: rotate(0deg);
 
     position: fixed;
@@ -119,6 +120,15 @@ span.bold{
 }
 .pizzaWrapper:hover{
     transition: 2s;
+}
+
+.randomizer{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: white;
+    top: 15px;
+    right: 5%;
 }
 
 #pay{
@@ -144,5 +154,36 @@ span.bold{
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
+    display: none;
+}
+#follower { 
+    background-color: rgb(39, 39, 39); 
+    display: none; 
+    position: fixed; 
+    border-radius: 10px; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 200%; 
+    padding: 5px;
+}
+.followerItem{
+    width: 40px; 
+    height: 40px; 
+    background-color: black;
+    border-radius: 10px; 
+    margin: 5px;
+}
+.followerItem img{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 10px; 
+}
+#fetaFixed, #motzaFixed, #cheddarFixed{
+    display: none;
+}
+#peperoniFixed, #bekonFixed, #shunkaFixed, #chikenFixed{
+    display: none;
+}
+#olivesFixed, #mushroomFixed, #kukurudzaFixed, #perecFixed, #ananasFixed, #tomatoFixed, #shpunatFixed{
     display: none;
 }
